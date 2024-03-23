@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Bán Dày Dép Nam Nữ Cao Cấp</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+<header>
+    <div class="hinh-anh">
+        <a href="./thuonghieu.html"><img src="images/2.png" width="746px" height="365px" alt=""></a>
+        <img src="images/anh2.jpg" width="746px" height="365px" alt="">
+    </div>
+<nav>
+   <div class="container">
+    <ul>
+        <li><a href="./thuonghieu.html"><img style="width: 90px;" height="60px" src="./images/logothuonghieu.jpg" alt=""></a></li>
+        <li id="adress-form"><a href="./diachi.html">Hà Nội - Hải Phòng ☜</a></li>
+        <li><input type="text" placeholder="Search...                                          🔎"></li>
+        <li><a href=""></a><button>🛒</button></li>
+        <li><a href="">Lịch sử đơn hàng</a></li>
+        <li><a href=""><span class="gl-content"><span class="gl-top"></span></span>24h Online</a></li>
+        <li><a href="">Hỏi Đáp</a></li>
+    </ul>
+   </div>
+</nav>
+<section class="menu-bar">
+    <div class="container">
+        <div class="menu-bar-content">
+            <ul>
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">GIỚI THIỆU</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">GIỚI THIỆU VỀ CÔNG TY</a></li>
+                            <li><a href="">GIỚI THIỆU VỀ SẢN PHẨM</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">SẢN PHẨM</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="./Sanphamnam.html">GIÀY, DÉP NAM</a></li>
+                            <li><a href="./Sanphamnu.html">GIÀY, DÉp NỮ</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./Thanhtoan.html">THANH TOÁN</a></li>
+                <li><a href="">TƯ VẤN</a></li>
+                <li><a href="">BLOG THIẾT KẾ</a></li>
+                <li><a href="">DỰ ÁN SHOP</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">SHOP THÚ CƯNG</a></LI>
+                            <li><a href="">T/KẾ QUÁN TRÀ SỮA</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">DỊCH VỤ</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">HƯỚNG DẪN ĐẶT HÀNG</a></li>
+                            <li><a href="">KHUYẾN MÃI GIẢM GIÁ</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">LIÊN HỆ</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">HOTLINE: 0355700507</a></li>
+                            <li><a href="./Lienhe.html">LIÊN HỆ VỚI TÔI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">TUYỂN DỤNG</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">TUYỂN NV BÁN HÀNG</a></li>
+                            <li><a href="">TUYỂN NV TƯ VẤN</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</header>   
+<style>
+        body{
+            font-size: 14px;
+            color: #111;
+            line-height: 1.15;
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #d26161;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display: block;
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;  
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+            
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+            
+        }
+</style>
+<div id="wrapper">
+    <div class="headline">
+        <h3>Sản Phẩm Bán Chạy Nhất</h3>
+    </div>
+<section class="slider">
+    <ul class="products">
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="./images/AG0290.webp" alt="">
+                    </a>
+                    <a href="./trangcon1.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoe</a>
+                    <a href="" class="product-name">Giày Thể Thao Nam Siêu Nhẹ AG0290</a>
+                    <div class="product-price"><del>425.000₫</del>  299.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="./images/Giày Thể Thao Chạy Bộ.webp" alt="">
+                    </a>
+                    <a href="./trangcon2.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoe</a>
+                    <a href="" class="product-name">Giày Thể Thao Chạy Bộ Nam Động Lực Jogarbola VN32 JG-VN32-02</a>
+                    <div class="product-price"><del>785.000₫</del>  550.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="./images/giay2.jpg" alt="">
+                    </a>
+                    <a href="./trangcon3.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoe</a>
+                    <a href="" class="product-name">Giày Thể Thao Vải Nam Cao Cấp, Cổ Chun, Đế Cao Su – Btg111</a>
+                    <div class="product-price"><del>400.000₫</del>  290.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="./images/Giày Thể Thao Sneaker Nam - Màu Trắng.jpg" alt="">
+                    </a>
+                    <a href="./trangcon4.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoe</a>
+                    <a href="" class="product-name">Giày Thể Thao Sneaker Nam - Màu Trắng</a>
+                    <div class="product-price"><del>250.000₫</del>  150.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/giay-mlb-bigball-chunky-mesh-new-york-yankees-3ashce12n-50crs-mau-trang-size-260-6237ed72ec951-21032022101354.jpg" alt="">
+                    </a>
+                    <a href="./trangcon5.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Shoe</a>
+                    <a href="" class="product-name">Giày MLB Cao Cấp</a>
+                    <div class="product-price"><del>5.000.000₫</del>  4.000.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/21347029534_1013893290.jpg" alt="">
+                    </a>
+                    <a href="./trangcon6.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Shoe</a>
+                    <a href="" class="product-name">Giày Nam SHNKIA Chất Liệu Da Bò</a>
+                    <div class="product-price"><del>1.490.000₫</del>  1.200.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/O1CN01tn47IA1RpKImHebbF_!!2215150072160-0-cib.jpg" alt="">
+                    </a>
+                    <a href="./trangcon7.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Shoe</a>
+                    <a href="" class="product-name">Giày Nam HURYS</a>
+                    <div class="product-price"><del>1.090.000₫</del>  900.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/O1CN01Dl7Y5d1VXhR5kxsTk_!!2212442572663-0-cib.jpg" alt="">
+                    </a>
+                    <a href="./trangcon8.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Shoe</a>
+                    <a href="" class="product-name">Giày JIESHO Nam</a>
+                    <div class="product-price"><del>1.550.000₫</del>  1.350.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/GNLA2020-D-1.jpg" alt="">
+                    </a>
+                    <a href="./trangcon9.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Leather Shoe</a>
+                    <a href="" class="product-name">Giày Penny Loafer Da Cá Sấu</a>
+                    <div class="product-price"><del>1.700.000₫</del>  1.600.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/giay-nam-da-bo-cao-cap-conxegn-17-500x500.jpg" alt="">
+                    </a>
+                    <a href="./trangcon10.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Leather Shoe</a>
+                    <a href="" class="product-name">Giày Nam Da Bò Cao Cấp</a>
+                    <div class="product-price"><del>850.000₫</del>  650.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/495_G_1684743967116.jpg" alt="">
+                    </a>
+                    <a href="./trangcon11.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Leather Shoe</a>
+                    <a href="" class="product-name">Giày Nam Cao Cấp LS08</a>
+                    <div class="product-price"><del>3.600.000₫</del>  2.050.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/giay-da-nam-cao-cap-da-that-ht02-1514553703_Untitled-1.jpg" alt="">
+                    </a>
+                    <a href="./trangcon12.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Leather Shoe</a>
+                    <a href="" class="product-name">Giày Da Nam Da Thật - HT02</a>
+                    <div class="product-price"><del>6.200.000₫</del>  5.550.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/vn-11134207-7r98o-loqyrtjoeadn35.jpg" alt="">
+                    </a>
+                    <a href="./trangcon13.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Slippers</a>
+                    <a href="" class="product-name">Dép Nam Dolce Mix Khoá</a>
+                    <div class="product-price"><del>148.000₫</del>  76.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/vn-11134201-7qukw-lgnelhhrp0z688.jpg" alt="">
+                    </a>
+                    <a href="./trangcon14.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion slippers</a>
+                    <a href="" class="product-name">Dép quai ngang Nam D.I.O.R CD</a>
+                    <div class="product-price"><del>170.000₫</del>   99.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/90179605d1be5fbb8214a7d61e849391.jpg" alt="">
+                    </a>
+                    <a href="./trangcon15.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion slippers</a>
+                    <a href="" class="product-name">Tổ Ong Dát Vàng 99K</a>
+                    <div class="product-price"><del>9.999.999₫</del>   6.666.666₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/vn-11134207-7qukw-lgk5qncrbsru0e.jpg" alt="">
+                    </a>
+                    <a href="./trangcon16.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion slippers</a>
+                    <a href="" class="product-name">Dép Nam Quai Ngang Phố Làng</a>
+                    <div class="product-price"><del>120.000₫</del>  80.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/top-10-mau-snacker-1.png" alt="">
+                    </a>
+                    <a href="./trangcon17.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoes</a>
+                    <a href="" class="product-name">Giày Nữ Sneaker Cao Cấp</a>
+                    <div class="product-price"><del>3.899.000₫</del>  3.199.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/img (1).jpg" alt="">
+                    </a>
+                    <a href="./trangcon18.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoes</a>
+                    <a href="" class="product-name">Giày Thể Thao Sneaker Nữ DILY</a>
+                    <div class="product-price"><del>700.000₫</del>  450.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/sneakers-nu-geox-d-rubidia-a-tumb-lea-mau-trang-size-39-646457c849985-17052023112752.jpg" alt="">
+                    </a>
+                    <a href="./trangcon19.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoes</a>
+                    <a href="" class="product-name">Giày Sneakers Nữ GEOX D Diamanta A</a>
+                    <div class="product-price"><del>4.299.000₫</del>  3.899.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/GIAY-THE-THAO-DA-THAT-PHOI-LUOI-2.jpg" alt="">
+                    </a>
+                    <a href="./trangcon20.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Sport Shoes</a>
+                    <a href="" class="product-name">Giày Thể Thao Nâng Đế</a>
+                    <div class="product-price"><del>2.299.000₫</del>  1.890.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/13052011311_867586326.jpg" alt="">
+                    </a>
+                    <a href="./trangcon21.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">High Heels</a>
+                    <a href="" class="product-name">Giày Cao Gót Nữ TRANTI</a>
+                    <div class="product-price"><del>1.620.000₫</del>  1.420.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/3176338157_617710707.jpg" alt="">
+                    </a>
+                    <a href="./trangcon22.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">High Heels</a>
+                    <a href="" class="product-name">Giày Cao Gót Nữ SIDNG</a>
+                    <div class="product-price"><del>1.350.000₫</del>  1.150.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/4da6e050c3ee293068e8f905a3e7bb6b.jpg" alt="">
+                    </a>
+                    <a href="./trangcon23.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">High Heels</a>
+                    <a href="" class="product-name">Giày Cao Gót Nữ Đi Tiệc Quai Ngang Đúp Mũi Dây Ngọc</a>
+                    <div class="product-price"><del>430.000₫</del>  350.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/O1CN01fQqvCp1GvlyZkCKgi_!!3403080685-0-cib.jpg" alt="">
+                    </a>
+                    <a href="./trangcon24.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">High Heels</a>
+                    <a href="" class="product-name">Giày Cao Gót Nữ ZHDBI</a>
+                    <div class="product-price"><del>1.190.000₫</del>  1.000.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/tw-11134201-7r98s-lne1yrsp1mpl40.jpg" alt="">
+                    </a>
+                    <a href="./trangcon25.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion slippers</a>
+                    <a href="" class="product-name">Dép Lông Đính Nơ</a>
+                    <div class="product-price"><del>500.000₫</del>  400.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/vn-11134201-7r98o-lnjhmr8wdg1mbe.jpg" alt="">
+                    </a>
+                    <a href="./trangcon26.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion slippers</a>
+                    <a href="" class="product-name">Dép Nữ Lông Xù Quai Ngang</a>
+                    <div class="product-price"><del>599.000₫</del>  499.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/vn-11134201-7qukw-lgvro0uzqd6a51.jpg" alt="">
+                    </a>
+                    <a href="./trangcon27.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Slippers</a>
+                    <a href="" class="product-name">Dép Lê Nữ Kiểu Pháp</a> 
+                    <div class="product-price"><del>570.000₫</del>  520.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="./images/Dép Đi Trong Nhà Cho Nữ Thời Trang.avif" alt="">
+                    </a>
+                    <a href="./trangcon28.html" class="buy-now">Mua ngay</a>
+                    <!--Mua Ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Fashion Slippers</a>
+                    <a href="" class="product-name">Dép Đi Trong Nhà Cho Nữ Thời Trang </a> 
+                    <div class="product-price"><del>300.000₫</del>  170.000₫</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="./images/GILA2.jpg" alt="" width="250" height="150"/>
+            </div>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách!</p>
+        </div>
+        <div class="box">
+            <h3>Nội Dung</h3>
+            <ul class="quick-menu">
+                <li>Trang chủ</li>
+                <li>Giới thiệu</li>
+                <li>Sản phẩm</li>
+                <li>Thanh toán</li>
+                <li>Tư vấn</li>
+                <li>Blog thiết kế</li>
+                <li>Dự án shop</li>
+                <li>Dịch vụ</li>
+                <li>Liên hệ</li>
+                <li>Tuyển dụng</li> 
+            </ul>
+        </div>
+        <div class="box">
+            <h3 color="red">Vị Trí</h3>
+            <form action="">
+                <img src="./images/vitri.jpg" alt="">
+            </form>
+        </div>
+        <div class="box">
+            <h3 color="red">LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </div>
+</div>
+</html>

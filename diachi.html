@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Địa chỉ</title>
+</head>
+<body background="./images/ảnh sang trọng.jpg">
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .adress-form {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0,0.6);
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #333;
+    }
+    .adress-form-content {
+        width: 450px;
+        height: 380px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .adress-form-content form {
+        padding: 0 50px;
+    }
+    .adress-form-content h2 {
+        font-size: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }   
+    .adress-form-content h2 span {
+        display: block;
+        position: absolute;
+        height: 30px;
+        padding: 0 6px;
+        border: 1px solid #ddd;
+        right: 12px;
+        cursor: pointer;
+        top:0;
+        transform: translate(0);
+        line-height: 30px;
+        color: #333;
+        border-radius: 5px;
+    }
+    .adress-form-content h2 span:hover {
+        background-color: rgb(245, 204, 214);
+        transition: all 0.3s ease;
+    }
+    .adress-form-content form p {
+        font-size: 13px;
+        color: rgb(233, 20, 20);
+    }
+    .adress-form-content form input,select {
+        height: 30px;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        padding: 6px;
+        border-radius: 5px;
+    }
+    .adress-form-content form button {
+        margin-top: 20px;
+        height: 40px;
+        width: 80%;
+        cursor: pointer;
+        background-color: #f4610d;
+        outline: none;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 2px 2px 1px #333;
+    }
+    .adress-form-content form button:hover {
+        background-color: rgb(212, 125, 38);
+        transition: all 0.3s ease;
+    }
+</style>
+<header>
+    <div class="adress-form">
+        <div class="adress-form-content">
+            <h2>Chọn địa chỉ nhận hàng<a href="./index.html"><span>X Đóng</span></a></h2>
+            <form action="">
+                <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao!</p>
+                <select name="id" id="">
+                    <option value="#">--Chọn địa điểm</option>
+                    <option value="#">Hà Nội</option>
+                    <option value="#">Hải Phòng</option>
+                </select>
+                <select name="id" id="">
+                    <option value="#">--Chọn Quận\Huyện</option>
+                    <option value="#">Thanh Trì</option>
+                    <option value="#">Ngô Quyền</option>
+                </select>
+                <select name="id" id="">
+                    <option value="#">--Chọn Phường\Xã</option>
+                    <option value="#">Vạn Phúc</option>
+                    <option value="#">Cầu Tre</option>
+                </select>
+                <input type="text" placeholder="Số nhà, Tên đường...">
+                <button>Xác nhận</button>
+            </form>
+        </div>
+    </div>
+</header>
+</body>
+</html>
